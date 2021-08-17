@@ -1,8 +1,11 @@
 #以下数据来自网络
 
 支持选集
-<option value="https://www.kpezp.cn/jlexi.php?url=" selected="">1.小蒋极致云解析</option>
-<option value="https://z1.m1907.cn/?jx=" selected="">2.M1907</option>
+<option value="https://www.kpezp.cn/jlexi.php?url=" selected="">小蒋极致云解析</option>
+<option value="https://z1.m1907.cn/?jx=" selected="">M1907</option>
+<option value="https://jx.rdhk.net/?v=" selected="">在线解析1</option>
+<option value="https://player.maqq.cn/?url=" selected="">vip尊享解析</option>
+<option value="" selected="">号线路</option>
 
 
 
