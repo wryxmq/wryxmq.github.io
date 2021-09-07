@@ -1,1 +1,0 @@
-copy/b q.png+q.zip Qimg.png
