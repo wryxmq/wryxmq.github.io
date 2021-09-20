@@ -1,0 +1,28 @@
+/*v1.0.0
+	编写者: 马猩猿(WRYXMQ,QMr)
+	时间: 20210920
+	url: https://wryxmq.github.io
+	
+	感谢以下网址提供技术参考或服务↓↓↓
+	https://fanyi.baidu.com
+
+*/
+
+* {
+	margin:0px;
+	padding:0px;
+}
+
+html, body {
+	height:100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+
+.背景颜色_红{
+	background: #FF0000;
+}
+
+.字体颜色_白{
+	color: #FFFFFF;
+}
