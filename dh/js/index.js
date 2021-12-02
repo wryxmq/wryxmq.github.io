@@ -19,7 +19,9 @@ var newD=new Date(date+24*60*60*1000);
 var Ifvip1 = document.cookie.indexOf("vip=");
 if(Ifvip1==-1){
     document.cookie="vip=1; expires="+newD.toUTCString();
-    alert("网站试运行期间随时可能有所改变,还请谅解.\n也欢迎提出您的宝贵意见或向本站提供网址方便更多人\n邮箱: wryxmq@protonmail.com\n注: 访问链接时需要等待完全加载完成后进行验证才能正常访问到真正的网站");
+    // 使用第三方弹窗
+    // alert("网站试运行期间随时可能有所改变,还请谅解.\n也欢迎提出您的宝贵意见或向本站提供网址方便更多人\n邮箱: wryxmq@protonmail.com\n注: 访问链接时需要等待完全加载完成后进行验证才能正常访问到真正的网站");
+    swal("公告", "网站试运行期间随时可能有所改变,还请谅解.\n也欢迎提出您的宝贵意见或向本站提供网址方便更多人\n邮箱: wryxmq@protonmail.com\n注: 访问链接时需要等待完全加载完成后进行验证才能正常访问到真正的网站");
 }
 
 if(Ifvip1!=-1){
@@ -54,6 +56,8 @@ $(".left-menu-btn").hover(function(){
 })
 
 
+
+
 //判断用户使用的设备
 var deviceVal  = browserRedirect();
 function browserRedirect() {
@@ -72,6 +76,8 @@ function browserRedirect() {
     return 'pc';
   }
 }
+
+
 
 /*
  * 2018-6-12更新
