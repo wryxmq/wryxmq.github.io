@@ -5,12 +5,34 @@
 	<title>个人照片</title>
 	<!-- 此处js代码可用https://utf-8.jp/public/aaencode.html进行加密 -->
 	<script>
-		var password="";
-		password=prompt('请输入访问密码：','');
-		if (password != 'wryxmq'){
-			alert("对不起,密码错误!");
-			window.location.href="https://wryxmq.github.io";
+		// 弹出询问框
+		function firm(){
+			if(confirm("目前只支持安卓系统使用,是否离开本站?")){
+				// javascript:window.opener=null;
+				// window.open('','_self');
+				// window.close();
+
+				window.location.href="https://www.baidu.com";
+
+			}else{
+				window.location.href="https://wryxmq.github.io";
+			}
 		}
+
+		// 判断是否是安卓系统访问
+		if(navigator.userAgent.indexOf("Android") > -1 ){
+			console.log("Android access(安卓访问)");
+
+			var password="";
+			password=prompt('请输入访问密码：','');
+			if (password != 'wryxmq'){
+				alert("对不起,密码错误!");
+				window.location.href="https://wryxmq.github.io";
+			}
+		}else{
+			firm();
+		}
+
 	</script>
 	<link rel="stylesheet" type="text/css" href="./css/photoGallery.css">
 </head>
@@ -22,15 +44,17 @@
 		data-desc:图片的描述
 	-->
 	<div id="photoGallery-container">
-		<img class="photoGallery" data-src="./img/1-1.jpg" src="./img/1-1.jpg" data-id="pic_1" data-desc="图片1">
-		<img class="photoGallery" data-src="./img/1-2.jpg" src="./img/1-2.jpg" data-id="pic_2" data-desc="图片2">
-		<img class="photoGallery" data-src="./img/1-3.jpg" src="./img/1-3.jpg" data-id="pic_3" data-desc="图片3">
-		<img class="photoGallery" data-src="./img/1-4.jpg" src="./img/1-4.jpg" data-id="pic_4" data-desc="图片4">
-		<img class="photoGallery" data-src="./img/1-5.jpg" src="./img/1-5.jpg" data-id="pic_5" data-desc="图片5">
-		<img class="photoGallery" data-src="./img/1-6.jpg" src="./img/1-6.jpg" data-id="pic_6" data-desc="图片6">
-		<img class="photoGallery" data-src="./img/1-7.jpg" src="./img/1-7.jpg" data-id="pic_7" data-desc="图片7">
-		<img class="photoGallery" data-src="./img/1-8.jpg" src="./img/1-8.jpg" data-id="pic_8" data-desc="图片8">
-		<img class="photoGallery" data-src="./img/1-8.jpg" src="./img/1-8.jpg" data-id="pic_9" data-desc="图片9">
+		<img class="photoGallery" data-src="./img/1/在中国人寿小组中最靓的仔1.jpg" src="./img/1/在中国人寿小组中最靓的仔1.jpg" data-id="pic_1" data-desc="在中国人寿小组中最靓的仔1.jpg">
+
+		<img class="photoGallery" data-src="./img/1/20200411_石家庄景区与我1.jpg" src="./img/1/20200411_石家庄景区与我1.jpg" data-id="pic_2" data-desc="20200411_石家庄景区与我1.jpg">
+
+		<img class="photoGallery" data-src="./img/1/20180708_该说不说有点程序员的气质.jpg" src="./img/1/20180708_该说不说有点程序员的气质.jpg" data-id="pic_3" data-desc="20180708_该说不说有点程序员的气质.jpg">
+
+		<img class="photoGallery" data-src="./img/1/20190620_加急返回长春臭美一下.jpg" src="./img/1/20190620_加急返回长春臭美一下.jpg" data-id="pic_4" data-desc="20190620_加急返回长春臭美一下.jpg">
+
+		<img class="photoGallery" data-src="./img/1/20220226_自拍.jpg" src="./img/1/20220226_自拍.jpg" data-id="pic_4" data-desc="20220226_自拍.jpg">
+
+
 	</div>
 	<script type="text/javascript" src="./js/jquery.min.js"></script>
 	<script type="text/javascript" src="./js/photoGallery.js"></script>
