@@ -5,23 +5,9 @@
 	<title>个人照片</title>
 	<!-- 此处js代码可用https://utf-8.jp/public/aaencode.html进行加密 -->
 	<script>
-		// 弹出询问框
-		function firm(){
-			if(confirm("目前只支持安卓系统使用,是否离开本站?")){
-				// javascript:window.opener=null;
-				// window.open('','_self');
-				// window.close();
-
-				window.location.href="https://www.baidu.com";
-
-			}else{
-				window.location.href="https://wryxmq.github.io";
-			}
-		}
 
 		// 判断是否是安卓系统访问
-		if(navigator.userAgent.indexOf("Android") > -1 ){
-			console.log("Android access(安卓访问)");
+		if(navigator.userAgent.indexOf("Android") > -1 || navigator.userAgent.indexOf("iPhone") > -1 ){
 
 			var password="";
 			password=prompt('请输入访问密码：','');
@@ -30,7 +16,7 @@
 				window.location.href="https://wryxmq.github.io";
 			}
 		}else{
-			firm();
+			window.location.href="https://wryxmq.github.io";
 		}
 
 	</script>
