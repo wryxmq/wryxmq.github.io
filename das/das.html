@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- 设置编码格式,防止出现乱码 -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>一码行(试运行...)</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		if(navigator.userAgent.match(/Alipay/i)){
+			//支付宝访问,直接跳转
+			window.location.href="https://qr.alipay.com/tsx00605uilzswl5zu4ig15";
+		}else if(navigator.userAgent.match(/MicroMessenger\//i)){
+			//微信访问,展示图片
+			window.location.href="./image/weixin.png";
+		}else if(navigator.userAgent.match(/QQ\//i)){
+			//qq访问
+			window.location.href="./image/qq.png";
+		}else{
+		    //非以上三种跳转至百度
+		    window.location.href="https://www.baidu.com";
+		}
+	</script>
+	
+	<!-- 统计代码 -->
+    <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1280727886'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1280727886%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>
