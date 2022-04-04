@@ -19,7 +19,7 @@ var newD=new Date(date+12*60*60*1000);
 var Ifvip1 = document.cookie.indexOf("vip=");
 if(Ifvip1==-1){
     document.cookie="vip=1; expires="+newD.toUTCString();
-    swal("公告(20220328-1)", "对站内失效解析或无法使用地址进行删除并加入新链接\n反馈/意见QQ群: 正在部署之中,尽请期待");
+    swal("公告(20220404-1)", "为更换服务大家，网站正在重新设计代码结构。目前代码还在测试阶段,感谢大家的一路支持与陪伴\n反馈/意见QQ群: 正在部署之中,尽请期待");
 }
 
 if(Ifvip1!=-1){
