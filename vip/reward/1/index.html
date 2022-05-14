@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>打赏</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="layui/css/layui.css"  media="all">
+  <style type="text/css">
+  .layui-tab-adapt{margin:50px 20px;}
+  @media screen and (min-width: 750px) {
+  .layui-tab-adapt{width:500px;margin:50px auto;}
+	}
+  </style>
+</head>
+<body>
+<div class="layui-tab layui-tab-card layui-tab-adapt">
+  <ul class="layui-tab-title">
+    <li class="layui-this" style="width:24%;">微信</li>
+    <li style="width:26%;">支付宝</li>
+	<li style="width:24%;">USDT</li>
+  </ul>
+  <div class="layui-tab-content">
+    <div class="layui-tab-item layui-show" align="center">
+		<img src="weipayimg.jpg" alt="微信收款图片丢失" style="max-width: 100%;" />
+	</div>
+    <div class="layui-tab-item" align="center">
+		<img src="alipayimg.jpg" alt="支付宝收款图片丢失" style="max-width: 100%;" />
+	</div>
+	<div class="layui-tab-item" align="center">
+		<img src="usdtpayimg.jpg" alt="usdt收款图片丢失" style="max-width: 100%;" />
+	</div>
+  </div>
+</div>
+
+<center>
+	<h3>打赏</h3>
+	目前网站打赏将用作网站的升级与日常维护<br>
+	如果你觉得本网站不错的话欢迎将本网站分享给别人<br>
+	最后感谢你的支持与信任<br>
+</center>
+
+<script src="layui/layui.js" charset="utf-8"></script>
+<script>
+layui.use('element', function(){
+  var $ = layui.jquery
+  ,element = layui.element;
+});
+</script>
+</body>
+</html>
