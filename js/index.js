@@ -19,7 +19,7 @@ var newD=new Date(date+12*60*60*1000);
 var Ifvip1 = document.cookie.indexOf("vip=");
 if(Ifvip1==-1){
     document.cookie="vip=1; expires="+newD.toUTCString();
-    swal("公告(20220605-1)", "感谢你能访问本网站,网站还在构建中\n还有很多不足,希望理解.\n反馈/意见QQ群: 正在部署之中,尽请期待");
+    swal("公告(20220705-1)", "网站目前还在构建中,希望听到你的声音\n反馈/意见QQ群: 702491473");
 }
 
 if(Ifvip1!=-1){
