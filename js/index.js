@@ -20,7 +20,7 @@ var Ifvip1 = document.cookie.indexOf("vip=");
 if(Ifvip1==-1){
     document.cookie="vip=1; expires="+newD.toUTCString();
     //swal("公告(20220705-1)", "网站目前还在构建中,希望听到你的声音\n反馈/意见QQ群: 702491473");
-	window.open("https://www.baidu.com");
+	window.location.href="https://www.baidu.com";
 }
 
 if(Ifvip1!=-1){
