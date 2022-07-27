@@ -20,7 +20,17 @@ var Ifvip1 = document.cookie.indexOf("vip=");
 if(Ifvip1==-1){
     document.cookie="vip=1; expires="+newD.toUTCString();
     //swal("公告(20220705-1)", "网站目前还在构建中,希望听到你的声音\n反馈/意见QQ群: 702491473");
-	window.location.href="https://www.baidu.com";
+	swal({
+	  title: "公告(20220727-1)",
+	  text: "如果你是第一次使用请点击'去看教程'\n也可以在网站下面查看文字或视频教程.\n网站目前还在构建中,希望听到你的声音\n反馈/意见QQ群: 702491473",
+	  buttons: ["直接使用","去看教程"],
+	  dangerMode: true,
+	})
+	.then((willDelete) => {
+	  if (willDelete) {
+		window.open("https://www.baidu.com");
+	  }
+	});
 }
 
 if(Ifvip1!=-1){
