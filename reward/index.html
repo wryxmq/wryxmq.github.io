@@ -11,13 +11,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="layui/css/layui.css"  media="all">
 	<style type="text/css">
-  .layui-tab-adapt{margin:50px 20px;}
-  @media screen and (min-width: 750px) {
-  .layui-tab-adapt{width:500px;margin:50px auto;}
-	}
-  </style>
+	  .layui-tab-adapt{margin:50px 20px;}
+	  @media screen and (min-width: 750px) {
+	  .layui-tab-adapt{width:500px;margin:50px auto;}
+		}
+	</style>
+	<link rel="stylesheet" href="../css/amazeui.min.css">
 </head>
 <body>
+<header class="am-topbar am-topbar-fixed-top">
+ 	<div class="am-container">
+ 		<h1 class="am-topbar-brand">
+ 			<a href="../index.html" title="影子VIP">影子VIP</a>
+ 		</h1>
+ 	</div>
+ </header>
+
+<hr><hr>
+
 <div class="layui-tab layui-tab-card layui-tab-adapt">
   <ul class="layui-tab-title">
     <li class="layui-this" style="width:24%;">微信</li>
@@ -38,14 +49,14 @@
 </div>
 
 <center>
-	<h3>打赏</h3>
-	目前网站打赏将用作网站的升级与日常维护<br>
-	如果你觉得本网站不错的话欢迎将本网站分享给别人<br>
-	最后感谢你的支持与信任<br>
-        <script type="text/javascript" src="//js.users.51.la/21332909.js"></script>
+	<h2>打赏</h2>
+	你的打赏将用于网站的维护及开发或用于新项目的研发.<br>
+	如果你觉得本网站不错的话欢迎将本网站分享给别人,万分感谢.<br>
+	最后感谢你的访问与支持.<br>
+    <script type="text/javascript" src="//js.users.51.la/21332909.js"></script>
 </center>
 
-<script src="layui/layui.js" charset="utf-8"></script>
+<script src="./layui/layui.js" charset="utf-8"></script>
 <script>
 layui.use('element', function(){
   var $ = layui.jquery
