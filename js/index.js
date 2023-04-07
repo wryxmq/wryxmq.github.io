@@ -19,16 +19,16 @@ var newD=new Date(date+12*60*60*1000);
 var Ifvip1 = document.cookie.indexOf("vip=");
 if(Ifvip1==-1){
     document.cookie="vip=1; expires="+newD.toUTCString();
-    //swal("公告(20220705-1)", "网站目前还在构建中,希望听到你的声音\n反馈/意见QQ群: 702491473");
+    //swal("公告(20230407-1)", "删除失效链接,替换新链接.感谢你的支持.");
 	swal({
-	  title: "公告(202301024-1)",
-	  text: "如果你是第一次使用请点击'去看教程'\n也可以在网站下面查看文字或视频教程.\n网站目前还在构建中,希望听到你的声音\n反馈/意见QQ群: 暂关闭",
+	  title: "公告(20230307-1)",
+	  text: "如果你是第一次使用请点击'去看教程'\n也可以在网站下面查看文字或视频教程.\n删除失效链接,替换新链接.感谢你的支持.",
 	  buttons: ["直接使用","去看教程"],
 	  dangerMode: true,
 	})
 	.then((willDelete) => {
 	  if (willDelete) {
-		window.open("https://www.baidu.com");
+		window.open("#");
 	  }
 	});
 }
