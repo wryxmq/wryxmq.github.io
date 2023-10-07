@@ -1,4 +1,4 @@
 User-agent:*
-Disallow:/rewara/*
+Disallow:/rewarad/*
 Disallow:/history/*
 Crawl-delay:5
