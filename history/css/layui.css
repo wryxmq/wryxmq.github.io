@@ -225,7 +225,7 @@ a cite {
     font-family: layui-icon;
     src: url(../fonts/iconfont.eot);
     src: url(../fonts/iconfont.eot) format('embedded-opentype'), 
-    url(https://www.jialicms.com/font/iconfont.svg) format('svg'), 
+    url(../font/iconfont.svg) format('svg'), 
     url(../fonts/iconfont.woff) format('woff'), 
     url(../fonts/iconfont.ttf) format('truetype')
 }

@@ -55,12 +55,12 @@
 </head> 
  <body>
  <!-- 弹窗公告 -->
- <script src="./js/index.js"></script>
+ <script src="./js/notice/index.js"></script>
  <!-- 弹窗公告结束-->
  <header class="am-topbar am-topbar-fixed-top">
  	<div class="am-container">
  		<h1 class="am-topbar-brand">
- 			<a href="#" title="影子VIP">影子VIP</a>
+ 			<a href="./index.html" title="影子VIP">影子VIP</a>
  		</h1>
  		<button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only" data-am-collapse="{target: '#collapse-head'}">
  			<span class="am-sr-only">导航切换</span>
@@ -85,7 +85,7 @@
    
    
    <!-- 顶部条幅广告 -->
-   <a href="https://k.youshop10.com/SjGHBL7E" target="_blank"> <img src="img/hbfmgg.gif" width="100%"></a>
+   <a id="ad_t1" href="" target="_blank"> <img src="" width="100%"></a>
 
    <div class="col-md-14 column"> 
     <div class="panel panel-default"> 
@@ -96,29 +96,11 @@
    </div> 
    <div class="col-md-14 column">
 		<!-- 文字广告 -->
-		<div align="center" style="margin-bottom: 5px;overflow: hidden;">
-			<a href="http://dpurl.cn/iPaYJitz" target="_blank" style="color: #ff0000;">【AD】美团外卖节,帮你吃更好</a>
-		</div>
+		<div id="ad_w1" align="center" style="margin-bottom: 5px;overflow: hidden;"></div>
     <div class="input-group" style="width: 100%; margin-bottom: 10px;"> 
     <span class="input-group-addon input-lg" style="width: 80px; ">选择接口</span> 
 	<select class="form-control input-lg" id="jk">
-		 <option value="https://jx.iztyy.com/svip/?url=">vip1</option>
-		 <option value="https://z1.im1907.top/?jx=">vip2</option>
-		 <option value="https://vip.bljiex.com/?v=">vip3</option>
-		 <option value="https://jx.777jiexi.com/player/?url=">vip4</option>
-		 <option value="https://www.yemu.xyz/?url=">vip5</option>
-		 <option value="https://www.yemu.xyz/v/c.php?url=">vip6</option>
-		 <option value="https://www.yemu.xyz/v/e.php?url=">vip7</option>
-		 <option value="https://jx.aidouer.net/?url=">vip8</option>
-		 <option value="https://jx.jsonplayer.com/player/?url=">vip9</option>
-		 <option value="https://www.ckmov.com/?url=">vip10</option>
-		 <option value="https://jx.bozrc.com:4433/player/?url=">vip11</option>
-		 <option value="https://www.ckmov.vip/api.php?url=">vip12</option>
-		 <option value="https://jx.m3u8.tv/jiexi/?url=">vip13</option>
-		 <option value="http://parse.123mingren.com/?url=">vip14</option>
-		 <option value="https://svip.bljiex.cc/?v=">vip15</option>
-		 <option value="https://okjx.cc/?url=">vip16(不推荐)</option>
-		 <!-- <option value=""></option> -->
+		 
 	</select>
     </div> 
     
@@ -148,11 +130,11 @@
    <div class="unit-100"> 
 	<!-- 图片广告 -->
 	<div id="alimama" class="language">
-		<a href="https://k.youshop10.com/SjGHBL7E" target="_blank">
-			<img src="./img/hbfmgg.gif" width="100%">
+		<a id="ad_t2" href="" target="_blank">
+			<img src="" width="100%">
 		</a>
-		<a href="https://k.youshop10.com/SjGHBL7E" target="_blank">
-			<img src="./img/hbfmgg.gif" width="100%">
+		<a id="ad_t3" href="" target="_blank">
+			<img src="" width="100%">
 		</a>
 	</div>
 	<table class="table table-bordered"> 
@@ -179,13 +161,13 @@
 	</table>
 	
    
-   
-   友情链接：
-   <a target="_blank" href="https://www.baidu.com">百度一下</a>
-   <a target="_blank" href="http://www.wxhao.cn">自动秒收录</a>
+<!-- 动态添加友情链接 -->  
+<div id="links"></div>
+<script src="./js/links/index.js"></script>
+
    <div class="panel-body" style="text-align: center;"> 
-    本站只提供web页面服务,并不提供视频上传及存储. 如有侵权请尽快联系.<br>
-	<span>至今本网站已安全运行<span id="days">0</span>天</span>
+   <p><script type="text/javascript" src="//js.users.51.la/21332909.js"></script></p>
+   <span>本网站已安全运行<span id="days">0</span>天</span>
 	<script> 
 		var s1 = '2022-05-26';//设置为你的建站时间 
 		s1 = new Date(s1.replace(/-/g, "/")); 
@@ -194,9 +176,11 @@
 		var number_of_days = parseInt(days / (1000 * 60 * 60 * 24)); 
 		document.getElementById('days').innerHTML = number_of_days; 
 	</script>
-	<br>
-	<a href="//beian.miit.gov.cn" target="_blank">京ICP备18000000号</a><br>
-	<p><script type="text/javascript" src="//js.users.51.la/21332909.js"></script></p>
+   <br>
+    本站只提供web页面服务,并不提供视频上传及存储. 如有侵权请尽快联系.<br>
+	
+	
+	
    </div> 
   </div> 
 
@@ -251,7 +235,7 @@
       }
 
 </script> 
-<script src="js/layui.js"></script>
+<script src="./js/layui.js"></script>
 <script>
 	var bannerb = 1450/315;//我的图片比例
 	 //获取浏览器宽度
@@ -269,15 +253,6 @@
 	   //,anim: 'updown' //切换动画方式
 	  });
 	 });
-
-    if (navigator.userAgent.match(/(iPhone|iPod|Android|ios|nokia|sony|ericsson|mot|samsung|htc|sgh|lg|sharp|sie-|panasonic|ucweb|meizu|blackberry|netfront|symbian|windowsce|palm|operamini|operamobi|lenovo|alcatel|philips|cldc|openwave|nexusone|midp|wap|mobile|UCBrowser)/i)) {
-      console.log('移动端')
-    }else{
-      console.log('PC端')
-			//通过某解析地址,在pc端增加解析地址
-			$('#jk option[value="https://jx.iztyy.com/svip/?url="]').after('<option value="https://www.nxflv.com/?url=">电脑解析1</option>');
-			
-    }
 	
 	//二开作者
 	console.group("二开作者、优化及运营");
@@ -287,8 +262,11 @@
 		
 </script>  
 
+<!-- 读取添加解析数据 -->
+<script src="./js/analysis/index.js"></script>
+<!-- 读取添加广告数据 -->
+<script src="./js/ads/index.js"></script>
 
- 
 </div>
 </body>
 </html>
