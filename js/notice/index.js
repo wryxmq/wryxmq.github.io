@@ -22,8 +22,8 @@ if(Ifvip1==-1){
     document.cookie="vip=1; expires="+newD.toUTCString();
     //swal("公告(20230407-1)", "删除失效链接,替换新链接.感谢你的支持.");
 	swal({
-	  title: "公告(20231007-1)",
-	  text: "每次失败都是在为新的开始做准备!",
+	  title: "公告(20231011-1)",
+	  text: "本网站解析链接由第三方提供,请勿相信视频在任何广告",
 	  buttons: ["直接使用","联系站长"],
 	  dangerMode: true,
 	})

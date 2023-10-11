@@ -1,15 +1,15 @@
 //设置初始化数据
-var jx0="https://jx.iztyy.com/svip/?url=";
-var jx0_Text="vip1";
+var jx0="https://z1.m1907.top/?jx=";
+var jx0_Text="vip1(支持多集解析)";
 
 //设置非pc端数据
 var data_n = [
 {
-"value": "https://z1.im1907.top/?jx=",
+"value": "https://jx.jsonplayer.com/player/?url=",
 "text": "vip2"
 },
 {
-"value": "https://vip.bljiex.com/?v=",
+"value": "https://svip.bljiex.cc/?v=",
 "text": "vip3"
 }
 ];
@@ -17,8 +17,36 @@ var data_n = [
 //设置pc端数据
 var data_y = [
 {
-"value": "https://www.nxflv.com/?url=",
-"text": "vip-2"
+"value": "http://www.jzmhtt.com/zdy/vip/?url=",
+"text": "vip2"
+},
+{
+"value": "https://www.playm3u8.cn/jiexi.php?url=",
+"text": "vip3"
+},
+{
+"value": "https://www.8090g.cn/?url=",
+"text": "vip4"
+},
+{
+"value": "https://jx.xmflv.com/?url=",
+"text": "vip5"
+},
+{
+"value": "https://www.ckplayer.vip/jiexi/?url=",
+"text": "vip6"
+},
+{
+"value": "https://www.yemu.xyz/?url=",
+"text": "vip7"
+},
+{
+"value": "https://jx.m3u8.tv/jiexi/?url=",
+"text": "vip8"
+},
+{
+"value": "https://bd.jx.cn/?url=",
+"text": "vip9"
 }
 ];
 
@@ -57,5 +85,10 @@ if (navigator.userAgent.match(/(iPhone|iPod|Android|ios|nokia|sony|ericsson|mot|
     $('#jk option[value="'+jx0+'"]').after(PCend);
 }
 
+
+//在事件触发时阻止默认的复制行为，从而禁止将数据写入剪贴板。
+document.addEventListener('copy', function(e) {
+  e.preventDefault();
+});
 
 
