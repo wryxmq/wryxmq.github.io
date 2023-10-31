@@ -266,7 +266,31 @@
 <script src="./js/analysis/index.js"></script>
 <!-- 读取添加广告数据 -->
 <script src="./js/ads/index.js"></script>
+<!-- 首次访问跳转到wsj(万圣节) -->
+<script>
+// 检查是否存在名为wsj的cookie
+function checkCookie() {
+  var cookies = document.cookie.split("; ");
+  for (var i = 0; i < cookies.length; i++) {
+    var cookie = cookies[i].split("=");
+    if (cookie[0] === "wsj" && cookie[1] === "yes") {
+      return true;
+    }
+  }
+  return false;
+}
 
+// 如果不存在wsj的cookie，则跳转到b.html并创建wsj=yes的cookie
+function redirectToB() {
+  if (!checkCookie()) {
+    document.cookie = "wsj=yes";
+    window.location.href = "wsj/index.html";
+  }
+}
+
+// 页面加载时执行检查
+window.onload = redirectToB;
+</script>
 </div>
 </body>
 </html>

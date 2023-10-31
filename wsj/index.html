@@ -1,0 +1,54 @@
+<!DOCTYPE >
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>万圣节-影子VIP</title>
+	<link href="static/css/zzsc.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="lantern">
+		<div class="face">
+			<div class="eyes"></div>
+			<div class="mouth"></div>
+		</div>
+	</div>
+	<h1>万圣节快乐<span>HappyHalloween</span></h1>
+	<script>
+		// 网页加载完毕后执行的函数
+        window.onload = function() {
+            // 创建一个显示倒计时的元素
+            var countdownElement = document.createElement('div');
+            countdownElement.style.position = 'fixed';
+            countdownElement.style.bottom = '10px';
+            countdownElement.style.right = '10px';
+            countdownElement.style.backgroundColor = '#000';
+            countdownElement.style.color = '#fff';
+            countdownElement.style.padding = '10px';
+            countdownElement.style.borderRadius = '5px';
+            countdownElement.style.fontFamily = 'Arial, sans-serif';
+            countdownElement.style.fontSize = '18px';
+            countdownElement.style.zIndex = '9999';
+            document.body.appendChild(countdownElement);
+
+            // 设置倒计时的初始值为5
+            var countdown = 10;
+
+            // 更新倒计时的显示
+            function updateCountdown() {
+                countdownElement.innerText = countdown;
+                countdown--;
+            }
+
+            // 每秒更新一次倒计时
+            var countdownInterval = setInterval(function() {
+                updateCountdown();
+
+                // 当倒计时为0时，跳转到1.html
+                if (countdown === 0) {
+                    clearInterval(countdownInterval);
+                    window.location.href = '../index.html';
+                }
+            }, 1000);
+        };
+	</script>
+</body>
+</html>
