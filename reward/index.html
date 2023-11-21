@@ -30,30 +30,15 @@
 <hr><hr>
 
 <div class="layui-tab layui-tab-card layui-tab-adapt">
-  <ul class="layui-tab-title">
-    <li class="layui-this" style="width:24%;">微信</li>
-    <li style="width:26%;">支付宝</li>
-	<li style="width:24%;">USDT</li>
-  </ul>
-  <div class="layui-tab-content">
-    <div class="layui-tab-item layui-show" align="center">
-		<img src="weipayimg.jpg" alt="微信收款图片丢失" style="max-width: 100%;" />
-	</div>
-    <div class="layui-tab-item" align="center">
-		<img src="alipayimg.jpg" alt="支付宝收款图片丢失" style="max-width: 100%;" />
-	</div>
-	<div class="layui-tab-item" align="center">
-		<img src="usdtpayimg.jpg" alt="usdt收款图片丢失" style="max-width: 100%;" />
-	</div>
-  </div>
+  
 </div>
+
 
 <center>
 	<h2>打赏</h2>
 	你的打赏将用于网站的维护及开发或用于新项目的研发.<br>
 	如果你觉得本网站不错的话欢迎将本网站分享给别人,万分感谢.<br>
-	最后感谢你的访问与支持.<br>
-    <script type="text/javascript" src="//js.users.51.la/21332909.js"></script>
+	最后感谢你的访问与支持.<br><br>
 </center>
 
 <script src="./layui/layui.js" charset="utf-8"></script>
@@ -63,5 +48,39 @@ layui.use('element', function(){
   ,element = layui.element;
 });
 </script>
+<script>
+	<!-- 网页中数据动态添加 -->
+	var ds0 = [
+	  {"name":"微信","url":"weipayimg.jpg","text":"微信收款图片丢失"},
+	  {"name":"支付宝","url":"alipayimg.jpg","text":"支付宝收款图片丢失"},
+	  {"name":"USDT-TRC20","url":"usdtpayimg.jpg","text":"usdt收款图片丢失"}
+	];
+
+	var tabTitle = '<ul class="layui-tab-title">';
+	var tabContent = '<div class="layui-tab-content">';
+
+	for (var i = 0; i < ds0.length; i++) {
+	  var item = ds0[i];
+	  var activeClass = i === 0 ? 'layui-this' : '';
+	  var widthStyle = 'width:' + (100 / ds0.length) + '%;';
+
+	  tabTitle += '<li class="' + activeClass + '" style="' + widthStyle + '">' + item.name + '</li>';
+	  tabContent += '<div class="layui-tab-item ' + activeClass + '" align="center">';
+	  tabContent += '<img src="' + item.url + '" alt="' + item.text + '" style="max-width: 100%;" />';
+	  tabContent += '</div>';
+	}
+
+	tabTitle += '</ul>';
+	tabContent += '</div>';
+
+	var tabContainer = document.querySelector('.layui-tab');
+	tabContainer.innerHTML = tabTitle + tabContent;
+  </script>
+  <script>
+	window.addEventListener('load', function() {
+	  var wechatLi = document.querySelector('.layui-tab-title li:first-child');
+	  wechatLi.click();
+	});
+  </script>
 </body>
 </html>

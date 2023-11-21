@@ -11,6 +11,14 @@ var data_n = [
 {
 "value": "https://svip.bljiex.cc/?v=",
 "text": "vip3"
+},
+{
+"value":"https://jx.playerjy.com/?url=",
+"text": "vip4"	
+},
+{
+"value":"https://jx.playerjy.com/?ads=0&url=",
+"text": "vip5"	
 }
 ];
 
@@ -47,6 +55,10 @@ var data_y = [
 {
 "value": "https://bd.jx.cn/?url=",
 "text": "vip9"
+},
+{
+"value":"https://2.08bk.com/?url=",
+"text":"vip10"	
 }
 ];
 
@@ -65,14 +77,14 @@ selectElement.appendChild(optionElement);
 //处理非pc端数据
 var NonPCend = '';
 data_n.forEach(function(option) {
-NonPCend += '<option value="' + option.value + '">' + option.text + '</option>';
+	NonPCend += '<option value="' + option.value + '">' + option.text + '</option>';
 });
 //console.log(NonPCend);
 
 //处理pc端数据
 var PCend = '';
 data_y.forEach(function(option) {
-PCend += '<option value="' + option.value + '">' + option.text + '</option>';
+	PCend += '<option value="' + option.value + '">' + option.text + '</option>';
 });
 //console.log(PCend);
 

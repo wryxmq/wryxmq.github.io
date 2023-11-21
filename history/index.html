@@ -10,7 +10,7 @@
 		<meta name="format-detection" content="telephone=no">
 		<title>更新日志 - 影子vip</title>
 		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-		<meta name="keywords" content="影子vip,vip视频解析,vip"> 
+		<meta name="keywords" content="影子vip,vip视频解析,vip">
 		<meta name="description" content="影子vip,让视频不再昂贵">
 		<link rel="stylesheet" href="./css/layui.css" media="all">
 		<link rel="stylesheet" href="./css/global.css" media="all">
@@ -21,9 +21,11 @@
 	</head>
 
 	<body>
-		<hr><hr><hr>
-		
-        <header class="am-topbar am-topbar-fixed-top">
+		<hr>
+		<hr>
+		<hr>
+
+		<header class="am-topbar am-topbar-fixed-top">
 			<div class="am-container">
 				<h1 class="am-topbar-brand">
 					<a href="../index.html" title="影子VIP">影子VIP</a>
@@ -35,34 +37,64 @@
 		  <script src="/static/js/html5.min.js"></script>
 		  <script src="/static/js/respond.min.js"></script>
 		<![endif]-->
-    
-    <div class="layui-main site-inline">
-        
-        <!--更新日志-->
-        <div class="site-content" style="display:inline-block">
-            <h1 class="site-h1">更新日志</h1>
-            <ul class="layui-timeline">
-                
-                <li class="layui-timeline-item">
-                    <i class="layui-icon layui-timeline-axis"></i>
-                    <div class="layui-timeline-content layui-text">
-                        <div class="layui-timeline-title">
-                            <h2>2022.06.30</h2>
-                        </div>
-                        <blockquote class="layui-elem-quote">
-                            本界面将在网站完善后更新,感谢你的支持.
-                        </blockquote>
-                        <ul>
-                        </ul>
-                    </div>
-                </li>
-				
-            </ul>
-            <div style="color: #0000FF">
-                <p><i>VIP视界,畅享高清影视;观影不再受限,解析精准速度快!-影子vip</i></p>
-            </div>
-        </div>
-    </div>
-    
+
+		<div class="layui-main site-inline">
+
+			<!--更新日志-->
+			<div class="site-content" style="display:inline-block">
+				<h1 class="site-h1">更新日志</h1>
+				<ul class="layui-timeline">
+
+					<li class="layui-timeline-item">
+
+					</li>
+					<script>
+						var gx = [
+						  {"time":"2023.11.22","text":"我们迎来了最后一次更新,因为个人原因本项目停止更新."},
+						  {"time":"2022.06.30","text":"本界面将在网站完善后更新,感谢你的支持."}
+						];
+						
+						var timelineItem = document.querySelector('.layui-timeline-item');
+						
+						gx.forEach(function(item) {
+						  var timelineContent = document.createElement('div');
+						  timelineContent.className = 'layui-timeline-content layui-text';
+						
+						  var timelineTitle = document.createElement('div');
+						  timelineTitle.className = 'layui-timeline-title';
+						
+						  var h2 = document.createElement('h2');
+						  h2.textContent = item.time;
+						
+						  timelineTitle.appendChild(h2);
+						
+						  var blockquote = document.createElement('blockquote');
+						  blockquote.className = 'layui-elem-quote';
+						  blockquote.textContent = item.text;
+						
+						  timelineContent.appendChild(timelineTitle);
+						  timelineContent.appendChild(blockquote);
+						
+						  var ul = document.createElement('ul');
+						
+						  timelineContent.appendChild(ul);
+						
+						  var timelineAxis = document.createElement('i');
+						  timelineAxis.className = 'layui-icon layui-timeline-axis';
+						
+						  timelineItem.appendChild(timelineAxis);
+						  timelineItem.appendChild(timelineContent);
+						});
+					</script>
+
+				</ul>
+				<div style="color: #0000FF">
+					<p>
+						<i>VIP视界,畅享高清影视;观影不再受限,解析精准速度快!-影子vip</i>
+					</p>
+				</div>
+			</div>
+		</div>
+
 	</body>
 </html>
