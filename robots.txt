@@ -1,4 +1,0 @@
-User-agent:*
-Disallow:/rewarad/*
-Disallow:/history/*
-Crawl-delay:5
