@@ -4,8 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>猩猿修机</title>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap">
 <style>
   body {
     display: flex;
@@ -14,7 +13,13 @@
     height: 100vh;
     margin: 0;
     background-color: #87CEEB;
-	font-family: 'Roboto', sans-serif;
+	//设置字体库
+	font-family: 'Noto Sans SC', sans-serif;
+	/* 禁止文字选择和复制 */
+	user-select: none;
+    -webkit-user-select: none; /* 兼容 WebKit 浏览器 */
+    -moz-user-select: none; /* 兼容 Firefox */
+    -ms-user-select: none; /* 兼容 IE/Edge */
   }
   .content {
     max-width: 600px;
@@ -28,6 +33,7 @@
     height: auto;
     border-radius: 8px;
     margin-bottom: 10px;
+	pointer-events: none; //禁止图片拖拽
   }
   
   a {font-size:16px}
@@ -49,10 +55,10 @@
   <div xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
     <a property="dct:title" rel="cc:attributionURL" href="https://wryxmq.github.io/2024001/001.jpg">猩猿修机</a>
     by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://wryxmq.github.io/2024001/index.htm">wryxmq</a>
-	许可下 
+	采用以下许可 
 	
 	<a href="http://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display: inline-block;">
-		Attribution-NoDerivatives 4.0 International
+		 署名-禁止演绎 4.0 国际(CC BY-ND 4.0)
     </a>
   </div>
 </div>
